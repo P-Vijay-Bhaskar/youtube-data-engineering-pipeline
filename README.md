@@ -1,5 +1,10 @@
 # YouTube Data Engineering Pipeline
 
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Docker Compose](https://img.shields.io/badge/Docker%20Compose-Orchestrated-blue)
+
 ## Overview
 
 This project is a production-style ETL (Extract, Transform, Load) pipeline that collects trending YouTube video data using the YouTube Data API v3, transforms the data using Pandas, and loads it into PostgreSQL.
