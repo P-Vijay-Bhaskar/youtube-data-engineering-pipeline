@@ -68,7 +68,8 @@ def transform_youtube_data():
             subset=["video_id"],
             inplace=True
         )
-
+        import os
+        os.makedirs("data/processed", exist_ok=True)
         df.to_csv(
             "data/processed/clean_youtube_data.csv",
             index=False

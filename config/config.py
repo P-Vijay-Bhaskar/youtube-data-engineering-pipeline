@@ -2,7 +2,7 @@ import os
 
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv("scripts/.env")
 
 API_KEY = os.getenv("API_KEY")
 

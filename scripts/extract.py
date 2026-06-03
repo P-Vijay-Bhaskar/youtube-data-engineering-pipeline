@@ -22,16 +22,16 @@ def extract_youtube_data():
             "maxResults": 50,
             "key": API_KEY
         }
-
         response = requests.get(
             endpoint,
             params=params
         )
-
         response.raise_for_status()
 
         data = response.json()
+        import os
 
+        os.makedirs("data/raw", exist_ok=True)
         with open(
             "data/raw/raw_youtube_data.json",
             "w"
